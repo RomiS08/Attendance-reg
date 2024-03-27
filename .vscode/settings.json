@@ -1,0 +1,6 @@
+{
+    "workbench.commandPalette.history": 50,
+    "workbench.localHistory.maxFileEntries": 50,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveWhenNoErrors": false
+}
