@@ -7,6 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     
+    
 
     <!-------- Customized CSS ---------->
 
@@ -45,7 +46,13 @@ error_reporting(E_ALL);
 ?>
 
 
-<h1 class="text-center"><?php echo $title ?></h1>
+<h1 class="text-center"><?php echo $title ?></h1> #
+
+<button id="dark-mode-toggle">
+    <i id="dark-mode-icon" class="fa fa-moon-o"></i>Dark Mode
+</button>
+
+
 
 <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="post">
     <table class="table table-sm table-borderless">
@@ -79,5 +86,21 @@ error_reporting(E_ALL);
 </br>
 </br>
 </br>
+
+<script>
+document.getElementById('dark-mode-toggle').addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+    var icon = document.getElementById('dark-mode-icon');
+    if (document.body.classList.contains('dark-mode')) {
+        icon.className = 'fa fa-sun-o';
+    } else {
+        icon.className = 'fa fa-moon-o';
+    }
+});
+
+</script>
+
+
+
 
 <?php include_once 'includes/footer.php'?>
