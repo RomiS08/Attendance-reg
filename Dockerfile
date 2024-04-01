@@ -15,3 +15,5 @@ EXPOSE 80
 
 # Run apache2-foreground when the container launches
 CMD ["apache2-foreground"]
+
+COPY my-httpd.conf /usr/local/apache2/conf/httpd.conf
