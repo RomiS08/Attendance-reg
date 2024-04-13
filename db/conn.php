@@ -2,11 +2,11 @@
     
     // Development Environment - Localhost MySQL Database Connection Configuration with XAMPP Server
 
-    $host = 'localhost';
-    $db ='attendance_db';
-    $user ='root';
-    $pass ='Romi.5351';
-    $charset ='utf8mb4';  
+    // $host = 'localhost';
+    // $db ='attendance_db';
+    // $user ='root';
+    // $pass ='Romi.5351';
+    // $charset ='utf8mb4';  
     
     // Production Environment - Remote MySQL Database Connection Configuration
 
