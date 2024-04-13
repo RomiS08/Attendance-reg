@@ -8,14 +8,21 @@
     // $pass ='Romi.5351';
     // $charset ='utf8mb4';  
     
-    // Production Environment - Remote MySQL Database Connection Configuration
+    // Production Environment - AWS RDS Remote MySQL Database Connection Configuration
 
-    $host = 'mysql.cdm08uoa8kk2.us-east-1.rds.amazonaws.com';
-    $db ='attendance_db';
-    $user ='admin';
-    $pass ='Romi.5351';
-    $charset ='utf8mb4';
+    // $host = 'mysql.cdm08uoa8kk2.us-east-1.rds.amazonaws.com';
+    // $db ='attendance_db';
+    // $user ='admin';
+    // $pass ='Romi.5351';
+    // $charset ='utf8mb4';
     
+// Production Environment - aiven.io MySQL Database Connection Configuration
+
+    $host = 'attendancedb-californiadiscover528-2d63.b.aivencloud.com';
+    $db ='defaultdb';
+    $user ='avnadmin';
+    $pass ='AVNS_AKA5iS8yMds7eau5mx3';
+    $charset ='utf8mb4';
 
     $dsn ="mysql:host=$host;dbname=$db;charset=$charset";
     

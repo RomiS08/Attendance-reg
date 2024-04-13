@@ -2,4 +2,4 @@ build:
   docker:
     web: Dockerfile
 run:
-  web: bundle exec puma -C config/puma.rb
+  web: php -S 0.0.0.0:${PORT:-8080} -t public/
