@@ -10,11 +10,12 @@
     
     // Production Environment - Remote MySQL Database Connection Configuration
 
-    // $host = 'sql6.freemysqlhosting.net';
-    // $db ='sql6693989';
-    // $user ='sql6693989';
-    // $pass ='7NcWWwUmJt';
-    // $charset ='utf8mb4';
+    $host = 'mysql.cdm08uoa8kk2.us-east-1.rds.amazonaws.com';
+    $db ='attendance_db';
+    $user ='admin';
+    $pass ='Romi.5351';
+    $charset ='utf8mb4';
+    
 
     $dsn ="mysql:host=$host;dbname=$db;charset=$charset";
     
