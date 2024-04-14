@@ -2,11 +2,11 @@
     
     // Development Environment - Localhost MySQL Database Connection Configuration with XAMPP Server
 
-    // $host = 'localhost';
-    // $db ='attendance_db';
-    // $user ='root';
-    // $pass ='Romi.5351';
-    // $charset ='utf8mb4';  
+    $host = '127.0.0.1';
+    $db ='attendance_db';
+    $user ='root';
+    $pass ='';
+    $charset ='utf8mb4';  
     
     // Production Environment - AWS RDS Remote MySQL Database Connection Configuration
 
@@ -18,11 +18,11 @@
     
 // Production Environment - aiven.io MySQL Database Connection Configuration
 
-    $host = 'attendancedb-californiadiscover528-2d63.b.aivencloud.com';
-    $db ='defaultdb';
-    $user ='avnadmin';
-    $pass ='AVNS_AKA5iS8yMds7eau5mx3';
-    $charset ='utf8mb4';
+    // $host = 'attendancedb-californiadiscover528-2d63.b.aivencloud.com';
+    // $db ='defaultdb';
+    // $user ='avnadmin';
+    // $pass ='AVNS_AKA5iS8yMds7eau5mx3';
+    // $charset ='utf8mb4';
 
     $dsn ="mysql:host=$host;dbname=$db;charset=$charset";
     
