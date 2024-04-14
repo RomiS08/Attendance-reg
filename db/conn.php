@@ -19,7 +19,7 @@
 // Production Environment - aiven.io MySQL Database Connection Configuration
 
     $host = 'attendancedb-californiadiscover528-2d63.b.aivencloud.com';
-    $db ='defaultdb';
+    $db ='attendance_db';
     $user ='avnadmin';
     $pass ='AVNS_AKA5iS8yMds7eau5mx3';
     $charset ='utf8mb4';
