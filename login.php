@@ -1,4 +1,3 @@
-
 <head>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -6,8 +5,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    
-    
+
+
 
     <!-------- Customized CSS ---------->
 
@@ -46,7 +45,7 @@ error_reporting(E_ALL);
 ?>
 
 
-<h1 class="text-center"><?php echo $title ?></h1> #
+<h1 class="text-center"><?php echo $title ?></h1>
 
 <button id="dark-mode-toggle">
     <i id="dark-mode-icon" class="fa fa-moon-o"></i>Dark Mode
@@ -58,29 +57,30 @@ error_reporting(E_ALL);
     <table class="table table-sm table-borderless">
         <tr>
             <td><label for="username"> Username </label></td>
-            <td><input type="text" name="username" class="form-control" id="username" value="<?php if($_SERVER['REQUEST_METHOD'] === "POST") echo $_POST['username']; ?>"></td>
-        </tr> 
+            <td><input type="text" name="username" class="form-control" id="username"
+                    value="<?php if($_SERVER['REQUEST_METHOD'] === "POST") echo $_POST['username']; ?>"></td>
+        </tr>
         <tr>
-            <td><label for="password" >Password </label></td>
+            <td><label for="password">Password </label></td>
             <td><input type="password" name="password" class="form-control" id="password"></td>
         </tr>
     </table>
-<br/> <br/> 
+    <br /> <br />
 
     <input type="submit" value="Login" class="btn btn-primary btn-block"> </br>
     <a href="#"> Forgot Password </a>
 
-</br> </br>
-</br> </br>
-</br> </br>
+    </br> </br>
+    </br> </br>
+    </br> </br>
 
-<div style="text-align: center;">
-    <a href="index.php" class="btn btn-primary"> <i class="fa fa-home"></i> Back to Home </a>
-</div>
+    <div style="text-align: center;">
+        <a href="index.php" class="btn btn-primary"> <i class="fa fa-home"></i> Back to Home </a>
+    </div>
 
 
 
-    
+
 </form>
 
 </br>
@@ -97,7 +97,6 @@ document.getElementById('dark-mode-toggle').addEventListener('click', function()
         icon.className = 'fa fa-moon-o';
     }
 });
-
 </script>
 
 
