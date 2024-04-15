@@ -88,7 +88,7 @@ if (!isset($_POST['submit']) || !isset($_POST['specialty'])){
         document.querySelector(".confirmation").style.display = "none";
 
         // Display the SweetAlert success message with a timer for redirection
-        swal({
+        Swal.fire({
             title: "Success!",
             text: "Successfully registered. Please check your email.",
             icon: "success",
