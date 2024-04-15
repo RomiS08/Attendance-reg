@@ -86,8 +86,26 @@ if (!isset($_POST['submit']) || !isset($_POST['specialty'])){
     document.getElementById("confirmBtn").addEventListener("click", function() {
         // Hide the confirmation button
         document.querySelector(".confirmation").style.display = "none";
-        // Display the success message
-        document.querySelector(".success-message").style.display = "block";
+
+        // Display the SweetAlert success message with a timer for redirection
+        swal({
+            title: "Success!",
+            text: "Successfully registered. Please check your email.",
+            icon: "success",
+            buttons: {
+                confirm: {
+                    text: "OK",
+                    value: true,
+                    visible: true,
+                    className: "btn btn-success"
+                }
+            }
+        }).then((value) => {
+            // Redirect after 1.5 seconds
+            setTimeout(function() {
+                window.location.href = "viewrecords.php";
+            }, 500);
+        });
 
         // Send AJAX request to insert.php to handle database insertion
         var xhr = new XMLHttpRequest();
@@ -96,17 +114,15 @@ if (!isset($_POST['submit']) || !isset($_POST['specialty'])){
         xhr.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 console.log(this.responseText);
-                // Redirect after 1.5 seconds
-                setTimeout(function() {
-                    window.location.href = "viewrecords.php";
-                }, 1500);
             }
         };
         xhr.send(
             "fname=<?php echo $fname; ?>&lname=<?php echo $lname; ?>&dob=<?php echo $dob; ?>&email=<?php echo $email; ?>&telephone=<?php echo $telephone; ?>&specialty=<?php echo $specialty_id; ?>"
-            );
+        );
     });
     </script>
+
+
 
     <?php 
 }  // End of else statement
