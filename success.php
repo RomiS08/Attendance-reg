@@ -16,6 +16,14 @@
 <body class="success-page">
 
     <?php 
+    // Log errors to a file
+ini_set('log_errors', 1);
+ini_set('error_log', '/path/to/error.log');
+
+// Example error logging
+$error_message = "Error message here";
+error_log($error_message);
+
 ob_start();
 $title = 'Success';  // Title of the page
 require_once 'includes/header.php';    // Including header file
