@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "bootstrap-icons": "^1.11.3",
-    "sweetalert2": "^11.10.6"
+    "sweetalert2": "^11.10.6",
+    "vue-toastification": "^1.7.14"
   }
 }
