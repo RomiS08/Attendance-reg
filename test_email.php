@@ -1,6 +1,7 @@
 <?php
 
-require 'SendEmail.php'; // Assuming your SendEmail class is defined in SendEmail.php
+require 'vendor/autoload.php';
+require_once 'sendemail.php';  // Including sendemail file
 
 // Test data
 $recipient = 'californiadiscover528@gmail.com';
