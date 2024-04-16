@@ -5,9 +5,10 @@ $isHeroku = getenv('IS_HEROKU');
 
 if ($isHeroku === 'true') {
     // Running on Heroku, environment variables are already set
+    require 'vendor/autoload.php';
 } else {
     // Running locally, load environment variables from .env file
-    require 'vendor/autoload.php';
+    require_once 'vendor/autoload.php';
     $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
     $dotenv->load();
 }
@@ -39,7 +40,7 @@ class SendEmail {
     }
 }
 
-// // Example usage
+// Example usage
 // $response = SendEmail::SendMail("recipient@example.com", "Test Email", "This is a test email.");
 // if ($response) {
 //     echo "Email sent successfully. Response: " . print_r($response, true);
