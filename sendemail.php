@@ -3,7 +3,7 @@
 class SendEmail {
 
     public static function SendMail($to, $subject, $content) {
-        // Get the API key from Heroku config vars
+        // Get the API key from Heroku config vars when Deployed and Run top up the the Heroku
         $apiKey = $_ENV['API_KEY'];
         $email = new \SendGrid\Mail\Mail();
         $email->setFrom("shone58deal345@gmail.com", "Sathsara Karunarathne");
