@@ -2,6 +2,8 @@
 
 require 'vendor/autoload.php';
 require_once 'sendemail.php';  // Including sendemail file
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
 
 // Test data
 $recipient = 'californiadiscover528@gmail.com';
